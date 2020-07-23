@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="EssentialsMC:jar">
+    <output-path>$USER_HOME$/Desktop/Server Survival/plugins</output-path>
+    <root id="archive" name="EssentialsMC.jar">
+      <element id="module-output" name="EssentialsMC" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Server Survival/spigot.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

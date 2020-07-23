@@ -1,0 +1,100 @@
+#█▀▀▀ █░░░ █░▒█ █▀▀█ █▀▀▀ █░░░ █▀▀▀█
+#█▀▀▀ █░░░ █░▒█ █░▄▄ █▀▀▀ █░░░ █░░▒█
+#█░░░ █▄▄█ ▀▄▄▀ █▄▄█ █▄▄▄ █▄▄█ █▄▄▄█
+#
+#█▀▀█ █░░░ █░▒█ █▀▀█ ▀█▀ █▄░▒█ █▀▀▀█
+#█▄▄█ █░░░ █░▒█ █░▄▄ ░█░ █▒█▒█ ▀▀▀▄▄
+#█░░░ █▄▄█ ▀▄▄▀ █▄▄█ ▄█▄ █░░▀█ █▄▄▄█
+
+#Plugin desenvolvido especialmente ao MortalCraft Survival 1.16.1
+
+Config:
+  preffix: "&eEssencialMC "
+
+  #Anotaçoes que aparecerar para so o jogador:
+  mensagem:
+    - "&f-=-=-=-=-=-=-xXx-=-=-=-=-=-=-"
+    - ""
+    - "&eBem vindo &c(player) &eao servidor"
+    - "&e"
+    - "&eServidor de sobrevivencia 1.16.1"
+    - "&eTudo liberado &cMENOS BUGS e HACK"
+    - ""
+    - "&f-=-=-=-=-=-=-xXx-=-=-=-=-=-=-"
+
+  #Title ao entrar no servidor:
+  #(player) = jogador
+  1linha: "&eEssencialMC"
+  2linha: "&aBem vindo &2(player) "
+  #mesangem ao entrar no chat para todos:
+  #(player) = jogador
+  MensagemJoin: "&e(player) &a+"
+  #Mensagem ao sair no Chat para todos:
+  #(player) = jogador
+  MensagemExit: "&e(player) &c-"
+
+  #Mensagem de permissao negada:
+  semPermissao: "&cSem permissão para executar esse comando!"
+
+ConfigKick:
+  nullKick:
+    - "Kicado do servidor"
+    - "Motivo: Sem motivo!"
+    - "Por: (sender)"
+
+
+  #Mensagem do motivo do kick
+  #(sender) = quem kicou o jogador;
+  #(playertarget) = player a ser kicado;
+  #(motivo) = motivo escrito pelo sender;
+  mensagemKick:
+    - "-=EssencialMC=-"
+    - "Kicado do servidor"
+    - "Motivo: (motivo)"
+    - "Por: (sender)"
+    - "-=EssencialMC=-"
+
+  #Mensagem que vai aparecer para todos quando player for kicado:
+  AllMenKick: "&c O Jogador &4(playertarget) &cfoi kicado pelo: &4(sender). &cPelo motivo: &6(motivo)"
+
+  #Mensagem que você nao pode kicar a si proprio:
+  noKick: "&cVoce não pode se kicar!"
+
+#Senha para executar o /op
+senhaOp: "!@#$%¨&*()"
+#Mensagem quando o player errar a senha:
+senhaErrada: "&cSenha incorreta"
+#Mensagem de quando trocar a senha do OP:
+trocarSenha: "&aSenha trocada com sucesso!"
+
+#Email do servidor:
+EmailServer: "mortalcraftserverminecraft@gmail.com"
+SenhaEmail: "mortalcraft170102"
+
+CofigTpa:
+  #Mesagem para o player que enviou o tpa
+  #(playertarget) = Pessoa que foi enviado o TPA
+  tpaPedido: "&aVocê mandou um pedido de TPA para o jogador &2(playertarget)"
+
+  #tempo para aceitar o tpa (em segundos):
+  tempo: 60
+
+  #Mensagem que vai chegar no playertarget
+  #(sender) pessoa que pediu o tpa
+  #(playertarget) pessoa que vai receber o tpa
+  #(tempo) = tempo para aceita o tpa
+
+  tpaTarget:
+    - ""
+    - "&aJogador &2(sender) &afez um pedido de teleportar ate você"
+    - "&aPara aceita o pedido de teleporte use &2/tpaccept"
+    - "&aVoce tem &2(tempo) &a para aceita o teleporte"
+    - "&aPara cancelar o teleporte use /tpadeny"
+    - ""
+ConfigTAB:
+  Fundador: "&6&lF&6undador &7"
+  Admin: "&c&lA&cdmin &7"
+  Ajudante: "&e&lA&ejudante &7"
+  Youtuber: "&5&lY&5outuber &7"
+  Vip: "&a&lV&aip &7"
+  Membro: "&7&lM&7embro &7"
